@@ -17,4 +17,4 @@ Vercel's record values can differ by project; use the values shown in the dashbo
 
 ## Contact details
 
-The page currently says contact details are coming soon. Replace that text in `index.html` with the business's confirmed contact information before relying on the page to receive inquiries.
+The contact section links to the business email and Instagram profile. The Instagram QR image is stored at `assets/instagram-qr.jpg`.
