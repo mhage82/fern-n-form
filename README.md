@@ -18,3 +18,5 @@ Vercel's record values can differ by project; use the values shown in the dashbo
 ## Contact details
 
 The contact section links to the business email and Instagram profile. The Instagram QR image is stored at `assets/instagram-qr.jpg`.
+
+The contact form submits to FormSubmit, which forwards inquiries to `ranamehdi@fernnform.com`. After deploying, submit a test through the live site, then open the FormSubmit activation email in that inbox and confirm it. Check the spam folder if it does not arrive. Submit a second test and verify it reaches the inbox, including a usable reply-to address. Until activation and delivery are confirmed, the form should not be relied on for inquiries. FormSubmit provides the confirmation page and spam protection.
