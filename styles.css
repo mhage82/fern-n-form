@@ -22,3 +22,7 @@ footer{flex-wrap:wrap}footer .footer-credit{flex:0 0 100%;order:4;margin:18px 0 
 
 /* Align paired service cards without cropping their artwork. */
 @media(min-width:681px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-group{display:contents}.service-group:first-child .service-card:first-child{grid-column:1;grid-row:1}.service-group:first-child .service-card:nth-child(2){grid-column:1;grid-row:2}.service-group:nth-child(2) .service-card:first-child{grid-column:2;grid-row:1}.service-group:nth-child(2) .service-card:nth-child(2){grid-column:2;grid-row:2}.service-card>p{min-height:3.8em}.project-open{height:clamp(260px,32vw,460px)}.project-feature img{max-height:100%;object-fit:contain}}
+
+/* Keep the existing layout balanced on wide screens. */
+body{max-width:1920px;margin-inline:auto}
+@media(min-width:901px){.hero-copy{padding-left:clamp(80px,8vw,155px);padding-right:40px}.hero h1 em{white-space:nowrap}}
