@@ -31,6 +31,20 @@
         if (event.target === viewer) viewer.close();
       });
     }
+    const strip = gallery.querySelector('#planting-thumbnails');
+    if (strip) {
+      const previous = gallery.querySelector('[data-scroll-previous]');
+      const next = gallery.querySelector('[data-scroll-next]');
+      const updateArrows = () => {
+        previous.disabled = strip.scrollLeft <= 1;
+        next.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 1;
+      };
+      previous.addEventListener('click', () => strip.scrollBy({left: -98, behavior: 'smooth'}));
+      next.addEventListener('click', () => strip.scrollBy({left: 98, behavior: 'smooth'}));
+      strip.addEventListener('scroll', updateArrows, {passive: true});
+      window.addEventListener('resize', updateArrows);
+      updateArrows();
+    }
     choices.forEach(button => button.addEventListener('click', () => {
       feature.querySelector('img').src = button.dataset.preview;
       feature.querySelector('img').alt = button.dataset.alt;
