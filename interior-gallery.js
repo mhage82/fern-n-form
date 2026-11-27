@@ -13,6 +13,22 @@
         viewer.querySelector('p').textContent = selected.dataset.caption;
         viewer.showModal();
       });
+      const zoom = viewer.querySelector('.planting-viewer-zoom');
+      if (zoom) {
+        const resetZoom = () => {
+          viewer.removeAttribute('data-zoomed');
+          zoom.setAttribute('aria-pressed', 'false');
+          zoom.textContent = 'Zoom in';
+          viewer.scrollTop = 0;
+          viewer.scrollLeft = 0;
+        };
+        zoom.addEventListener('click', () => {
+          const active = viewer.toggleAttribute('data-zoomed');
+          zoom.setAttribute('aria-pressed', String(active));
+          zoom.textContent = active ? 'Zoom out' : 'Zoom in';
+        });
+        viewer.addEventListener('close', resetZoom);
+      }
       viewer.addEventListener('click', event => {
         if (event.target === viewer) viewer.close();
       });
