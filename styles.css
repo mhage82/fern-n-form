@@ -67,3 +67,13 @@ footer .footer-brand img{display:block;width:100%;height:auto}
 @supports (grid-template-rows:subgrid){@media(min-width:681px){.service-grid .service-card{display:grid;grid-template-rows:subgrid;row-gap:0}.service-group:first-child .service-card:first-child,.service-group:first-child .service-card:nth-child(2){grid-row:1 / span 4}.service-group:nth-child(2) .service-card:first-child,.service-group:nth-child(2) .service-card:nth-child(2){grid-row:5 / span 4}.service-card .project-open{align-items:flex-start}}}
 
 @media(max-width:680px){.site-header nav{flex-wrap:wrap;overflow:visible;row-gap:12px}}
+
+/* Enlarged view for the planting plans gallery. */
+.project-gallery[data-enlarge] .project-open{cursor:zoom-in}
+.planting-viewer{width:min(96vw,1600px);max-width:96vw;max-height:94vh;padding:14px;border:0;background:#f1eadf;color:#394e60}
+.planting-viewer::backdrop{background:rgba(48,52,56,.85)}
+.planting-viewer form{display:flex;justify-content:flex-end;margin:0 0 8px}
+.planting-viewer-close{width:40px;height:40px;border:1px solid #78886b;background:transparent;color:#394e60;font-family:inherit;font-size:24px;line-height:1;cursor:pointer}
+.planting-viewer img{display:block;width:auto;max-width:100%;max-height:calc(94vh - 120px);height:auto;margin:auto;object-fit:contain}
+.planting-viewer p{margin:10px 0 0;font-size:12px;line-height:1.5}
+.planting-viewer-close:focus-visible{outline:3px solid #bd7b58;outline-offset:3px}
