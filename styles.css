@@ -51,10 +51,10 @@ body{max-width:1920px;margin-inline:auto}
 .cover-artwork{mix-blend-mode:darken}
 
 /* Use the original logo for the contact background and footer brand. */
-.closing .closing-word{position:absolute;right:4%;bottom:24px;width:min(48%,640px);height:auto;max-width:100%;opacity:.35;mix-blend-mode:screen;pointer-events:none}
+.closing .closing-word{position:absolute;right:4%;bottom:24px;width:min(36%,480px);height:auto;max-width:100%;opacity:.35;mix-blend-mode:screen;pointer-events:none}
 footer .footer-brand{display:block;flex:none;width:220px;padding:6px 10px}
 footer .footer-brand img{display:block;width:100%;height:auto}
-@media(max-width:680px){.closing .closing-word{right:2%;bottom:18px;width:min(72%,400px)}footer .footer-brand{width:190px}}
+@media(max-width:680px){.closing .closing-word{right:4%;bottom:18px;width:min(54%,300px)}footer .footer-brand{width:190px}}
 
 /* Content refinement: preserve the established palette and typography. */
 .section-wrap{padding-block:96px}.cover-introduction,.intro-bottom p,.service-card p,.portfolio-content>p:not(.eyebrow),.contact-copy>p:not(.eyebrow){font-size:16px}
