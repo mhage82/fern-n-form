@@ -55,3 +55,15 @@ body{max-width:1920px;margin-inline:auto}
 footer .footer-brand{display:block;flex:none;width:220px;padding:6px 10px}
 footer .footer-brand img{display:block;width:100%;height:auto}
 @media(max-width:680px){.closing .closing-word{right:2%;bottom:18px;width:min(72%,400px)}footer .footer-brand{width:190px}}
+
+/* Content refinement: preserve the established palette and typography. */
+.section-wrap{padding-block:96px}.cover-introduction,.intro-bottom p,.service-card p,.portfolio-content>p:not(.eyebrow),.contact-copy>p:not(.eyebrow){font-size:16px}
+.portfolio-projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:42px}.portfolio-project h3,.approach-grid h3{font-family:var(--serif);font-size:25px;font-weight:400;color:#394e60;margin:0 0 12px}.portfolio-project{min-width:0;border-top:1px solid #bd7b58;padding-top:22px}.portfolio-project .project-gallery{margin-top:20px}
+.approach{background:#f1eadf}.approach-content{max-width:1050px;min-width:0}.approach h2{font-family:var(--serif);font-size:clamp(42px,4.4vw,65px);font-weight:400;letter-spacing:-.035em;line-height:1.15;color:#394e60;margin:0}.approach h2 em{font-weight:400}.approach-intro,.approach-grid p{font-size:16px;line-height:1.9;color:#303438;margin:0}.approach-intro{margin-top:24px}.approach-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:40px}.approach-grid article{border-top:1px solid #bd7b58;padding-top:22px}.approach-grid .service-number{margin-bottom:12px}
+@media(min-width:681px){.service-group:first-child .service-card:nth-child(2){grid-column:2;grid-row:1}.service-group:nth-child(2) .service-card:first-child{grid-column:1;grid-row:2}}
+@media(max-width:900px){.section-wrap{padding-block:75px}}@media(max-width:680px){.portfolio-projects,.approach-grid{grid-template-columns:1fr}.approach h2{font-size:40px}}
+
+/* Align service headings, descriptions, and images across each desktop row. */
+@supports (grid-template-rows:subgrid){@media(min-width:681px){.service-grid .service-card{display:grid;grid-template-rows:subgrid;row-gap:0}.service-group:first-child .service-card:first-child,.service-group:first-child .service-card:nth-child(2){grid-row:1 / span 4}.service-group:nth-child(2) .service-card:first-child,.service-group:nth-child(2) .service-card:nth-child(2){grid-row:5 / span 4}.service-card .project-open{align-items:flex-start}}}
+
+@media(max-width:680px){.site-header nav{flex-wrap:wrap;overflow:visible;row-gap:12px}}
