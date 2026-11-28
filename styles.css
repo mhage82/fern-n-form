@@ -37,7 +37,7 @@ body{max-width:1920px;margin-inline:auto}
 @media(max-width:680px){.hero.cover-hero{padding:12px 5% 48px}.cover-button{padding:15px 24px}.intro-legacy{margin-top:36px}}
 
 /* Homepage copy uses the existing type, palette, and button styles. */
-.cover-studio-title{font-family:var(--serif);font-size:25px;font-weight:400;color:#394e60;margin:0 0 24px;text-align:center}
+.cover-studio-title{font-family:var(--serif);font-size:31.25px;font-weight:400;color:#394e60;margin:0 0 24px;text-align:center}
 .cover-introduction{max-width:660px;text-align:center;color:#303438;font-size:14px;line-height:1.9}
 .cover-introduction p{margin:0 0 16px}
 .cover-actions{justify-content:center;margin-top:14px}
