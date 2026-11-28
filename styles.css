@@ -99,3 +99,6 @@ footer .footer-brand img{display:block;width:100%;height:auto}
 [data-planting-gallery] .planting-viewer{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;inset:0;margin:0}
 [data-planting-gallery] .planting-viewer img{max-height:calc(100vh - 120px);max-height:calc(100dvh - 120px)}
 [data-planting-gallery] .planting-viewer[data-zoomed] img{max-height:none}
+
+/* Expandable service lists use the existing service typography and colors. */
+.service-details{margin-top:12px;color:#303438;font-size:16px;line-height:1.9}.service-details summary{color:#394e60;cursor:pointer}.service-details summary:focus-visible{outline:3px solid #bd7b58;outline-offset:3px}.service-details ul{margin:8px 0 0;padding-left:1.4em}@media(min-width:681px){.service-description>p{min-height:3.8em}}
