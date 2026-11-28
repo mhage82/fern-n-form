@@ -102,3 +102,6 @@ footer .footer-brand img{display:block;width:100%;height:auto}
 
 /* Service lists use the existing service typography and colors. */
 .service-description ul{margin:0;padding-left:1.4em;color:#303438;font-size:16px;line-height:1.9}
+
+/* Keep the original cover art and studio introduction together on the first screen. */
+.hero.cover-hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);min-height:calc(100svh - 108px);padding:24px 6%;align-items:center}.cover-copy{max-width:520px}.cover-studio-title,.cover-introduction{text-align:left}.cover-actions{justify-content:flex-start}.cover-button-outline{border:1px solid #394e60;background:transparent;color:#394e60}.cover-button-outline:hover{background:#394e60;color:#f1eadf}@media(max-width:680px){.hero.cover-hero{grid-template-columns:1fr;gap:8px;min-height:0;padding:12px 5% 40px}.cover-artwork{width:min(100%,440px);justify-self:center}.cover-copy{max-width:520px;text-align:center}.cover-studio-title,.cover-introduction{text-align:center}.cover-studio-title{margin-bottom:12px}.cover-introduction p{margin-bottom:10px}.cover-actions{justify-content:center;margin-top:8px;gap:12px}}
